@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 //import './EventList.css';
 //import UtilDate from './UtilDate';
+import EventHandler from './EventHandler';
 
 class EventList extends Component {
 
@@ -11,10 +12,18 @@ class EventList extends Component {
   }*/
  
   render() {
-   
+   if(EventHandler.events.length!=0)
     return (
-      <div>
-        This is a list events
+      <div className="event-list">
+        {EventHandler.events.map(
+            e=><div>e.name</div>
+        )}
+      </div>
+    );
+
+    return (
+      <div className="event-list">
+        No events for this day
       </div>
     );
   }
