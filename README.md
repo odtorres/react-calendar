@@ -18,7 +18,7 @@ GitHub: [odtorres](https://github.com/odtorres)
 ## License
   TUF-2000m-webclient by Oscar Daniel Torres Hdez <odtorres891118@gmail.com>
 
-  Copyright (C) 2015 Oscar Daniel Torres Hdez.
+  Copyright (C) 2017 Oscar Daniel Torres Hdez.
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU Affero General Public License as published
