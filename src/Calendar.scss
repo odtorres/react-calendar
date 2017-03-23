@@ -40,10 +40,11 @@
 }
 
 .actionPanel :not(.wide){
-  cursor:pointer;
+  @extend .cursorHand; 
 }
 
 .days div{
+  @extend .cursorHand; 
   flex: 1 0 13%;
 }
 

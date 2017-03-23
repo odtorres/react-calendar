@@ -1,18 +1,21 @@
-.component, .eventList {
+.square, .component, .eventList {
   border: 1px solid #ccc;
-  padding: 10px;
   margin: 10px;
-  margin: 30;
-  padding: 30;
+  padding: 10px;
   font-family: sans-serif;
   color: #333; }
-  @media screen and (max-width: 420px) {
-    .component, .eventList {
-      font-size: 2rem; } }
-  @media screen and (min-width: 600px) {
-    .component, .eventList {
-      width: 300px;
-      font-size: 1rem; } }
+
+@media screen and (max-width: 420px) {
+  .component, .eventList {
+    font-size: 1.5rem; } }
+
+@media screen and (min-width: 600px) {
+  .component, .eventList {
+    width: 300px;
+    font-size: 1rem; } }
+
+.cursorHand {
+  cursor: pointer; }
 
 @keyframes toDark {
   0% {
@@ -20,5 +23,5 @@
   100% {
     background-color: gray; } }
 
-li {
-  width: 100%; }
+.eventList .square button, .eventList .component button, .eventList .eventList button {
+  float: right; }

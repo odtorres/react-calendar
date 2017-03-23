@@ -49,12 +49,16 @@ class EventList extends Component {
             if (EventHandler.events[this.props.events] && EventHandler.events[this.props.events].dayEvents.length !== 0) {
                 return (
                     <div className="eventList">
-                        <ul>
+                        
                             {EventHandler.events[this.props.events].dayEvents.map(
-                                (e, i) => <li key={i}>{"(" + e.from + "-" + e.to + "): " + e.name} <button onClick={this.removeEvent} id={i}>X</button></li>
+                                (e, i) => 
+                                    <div key={i} className="square">
+                                        <div> {"(" + e.from + "-" + e.to + ")"}<button onClick={this.removeEvent} id={i}>X</button></div>
+                                        {e.name}
+                                   </div>
                             )}
-                        </ul>
-                        <div className="action">
+                        
+                        <div>
                             <button onClick={this.done} >Done</button>
                             <button onClick={this.showEventForm} >Add event</button>
                         </div>

@@ -4,6 +4,6 @@
     @extend .component;
 }
 
-li{
-    width: 100%;
+.eventList .square button{
+    float: right;    
 }

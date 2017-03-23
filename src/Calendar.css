@@ -1,18 +1,21 @@
-.component, .calendar {
+.square, .component, .calendar {
   border: 1px solid #ccc;
-  padding: 10px;
   margin: 10px;
-  margin: 30;
-  padding: 30;
+  padding: 10px;
   font-family: sans-serif;
   color: #333; }
-  @media screen and (max-width: 420px) {
-    .component, .calendar {
-      font-size: 2rem; } }
-  @media screen and (min-width: 600px) {
-    .component, .calendar {
-      width: 300px;
-      font-size: 1rem; } }
+
+@media screen and (max-width: 420px) {
+  .component, .calendar {
+    font-size: 1.5rem; } }
+
+@media screen and (min-width: 600px) {
+  .component, .calendar {
+    width: 300px;
+    font-size: 1rem; } }
+
+.cursorHand, .actionPanel :not(.wide), .days div {
+  cursor: pointer; }
 
 @keyframes toDark {
   0% {
@@ -42,9 +45,6 @@
 
 .actionPanel .wide {
   flex: 5 0 40%; }
-
-.actionPanel :not(.wide) {
-  cursor: pointer; }
 
 .days div {
   flex: 1 0 13%; }

@@ -38,7 +38,7 @@ class EventForm extends Component {
   }
 
   handleName(e) {
-    if(e.target.value.length<=15)
+    if (e.target.value.length <= 11)
       this.setState({ name: e.target.value });
   }
 
@@ -46,8 +46,8 @@ class EventForm extends Component {
     this.setState({ details: e.target.value });
   }
 
-  done() {    
-    this.props.addEvent(this.state.name, this.state.details,this.state.from,this.state.to);
+  done() {
+    this.props.addEvent(this.state.name, this.state.details, this.state.from, this.state.to);
     this.props.done();
   }
 
@@ -60,24 +60,24 @@ class EventForm extends Component {
     return (
       <div className="eventForm">
         <div>
-        <label> Name : </label>
-        <input placeholder="EventName" value={name} onChange={this.handleName}></input>
+          <label> Name : </label>
+          <input placeholder="EventName" value={name} onChange={this.handleName}></input>
         </div>
         <div>
-        <label> From : </label>
-        <select value={from} onChange={this.handleFrom}>
-          {UtilDate.dayTime.map((e, i) => <option key={i}>{e}</option>)}
-        </select>
+          <label> From : </label>
+          <select value={from} onChange={this.handleFrom}>
+            {UtilDate.dayTime.map((e, i) => <option key={i}>{e}</option>)}
+          </select>
         </div>
         <div>
-        <label> To : </label>
-        <select value={to} onChange={this.handleTo}>
-          {UtilDate.dayTime.slice(this.from,UtilDate.dayTime.length).map((e, i) =>  { return <option key={i}>{e}</option>} )}
-        </select>
+          <label> To : </label>
+          <select value={to} onChange={this.handleTo}>
+            {UtilDate.dayTime.slice(this.from, UtilDate.dayTime.length).map((e, i) => { return <option key={i}>{e}</option> })}
+          </select>
         </div>
         <div>
-        <label> Details : </label>
-        <textarea placeholder="Details" value={details} onChange={this.handleDetails}></textarea>
+          <label> Details : </label>
+          <textarea placeholder="Details" value={details} onChange={this.handleDetails}></textarea>
         </div>
         <button onClick={this.done} >Done</button>
         <button onClick={this.cancel} >Cancel</button>
