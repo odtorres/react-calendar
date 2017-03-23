@@ -1,0 +1,27 @@
+.component, .eventForm {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  margin: 30;
+  padding: 30;
+  font-family: sans-serif;
+  color: #333; }
+
+@media screen and (max-width: 420px) {
+  .component, .eventForm {
+    font-size: 2rem; } }
+
+@media screen and (min-width: 600px) {
+  .component, .eventForm {
+    width: 300px;
+    font-size: 1rem; } }
+
+@keyframes toDark {
+  0% {
+    background-color: white; }
+  100% {
+    background-color: gray; } }
+
+label {
+  width: 40%;
+  float: left; }

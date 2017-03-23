@@ -1,0 +1,10 @@
+@import "General.scss";
+
+.eventForm{
+    @extend .component;
+}
+
+label{
+    width: 40%;
+    float: left;
+}
