@@ -6,15 +6,13 @@
   padding: 30;
   font-family: sans-serif;
   color: #333; }
-
-@media screen and (max-width: 420px) {
-  .component, .calendar {
-    font-size: 2rem; } }
-
-@media screen and (min-width: 600px) {
-  .component, .calendar {
-    width: 300px;
-    font-size: 1rem; } }
+  @media screen and (max-width: 420px) {
+    .component, .calendar {
+      font-size: 2rem; } }
+  @media screen and (min-width: 600px) {
+    .component, .calendar {
+      width: 300px;
+      font-size: 1rem; } }
 
 @keyframes toDark {
   0% {
@@ -36,14 +34,17 @@
 .year div {
   flex: 7 0 100%; }
 
-.action-panel {
+.actionPanel {
   grid-area: month;
   display: flex;
   flex-wrap: wrap;
   flex: 1 0 30%; }
 
-.action-panel .wide {
+.actionPanel .wide {
   flex: 5 0 40%; }
+
+.actionPanel :not(.wide) {
+  cursor: pointer; }
 
 .days div {
   flex: 1 0 13%; }

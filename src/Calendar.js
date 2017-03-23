@@ -85,7 +85,7 @@ class Calendar extends Component {
           <div className="year">
             <div >{this.state.currentYear}</div>
           </div>
-          <div className="action-panel">
+          <div className="actionPanel">
             <div onClick={this.monthBefore} >{'<'}</div>
             <div className="wide">{UtilDate.getMonthName(this.state.currentMonth)}</div>
             <div onClick={this.monthAfter} >{'>'}</div>

@@ -27,15 +27,20 @@
   
 }
 
-.action-panel{
+.actionPanel{
   grid-area: month;
   display: flex;
   flex-wrap: wrap;
   flex: 1 0 30%;
   
 }
-.action-panel .wide{
+
+.actionPanel .wide{
   flex: 5 0 40%;
+}
+
+.actionPanel :not(.wide){
+  cursor:pointer;
 }
 
 .days div{
