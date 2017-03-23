@@ -10,8 +10,8 @@ class EventForm extends Component {
     this.state = {
       name: "",
       details: "",
-      from: 0,
-      to: 0
+      from: UtilDate.dayTime[0],
+      to: UtilDate.dayTime[0]
     };
     this.done = this.done.bind(this);
     this.handleFrom = this.handleFrom.bind(this);
@@ -30,6 +30,7 @@ class EventForm extends Component {
   handleFrom(e) {
     this.from = e.target.selectedIndex
     this.setState({ from: e.target.value });
+    this.setState({ to: e.target.value });
   }
 
   handleTo(e) {
