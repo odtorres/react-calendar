@@ -1,7 +1,8 @@
 {
   "name": "react-calendar",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage":"https://odtorres.github.io/react-calendar/",
   "devDependencies": {
     "node-sass": "^4.5.0",
     "npm-run-all": "^4.0.2",
