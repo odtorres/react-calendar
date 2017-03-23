@@ -5,7 +5,10 @@ Simple React Calendar Component.
 [Simple demo.](https://odtorres.github.io/react-calendar/)
 
 ## Installation
-
+1. git clone https://github.com/odtorres/react-calendar.git
+2. cd /react-calendar
+3. npm install
+4. npm start
 
 ## Components
 1. Calendar
