@@ -1,28 +1,32 @@
-@keyframes example {
-  0% {
-    background-color: white; }
-  100% {
-    background-color: gray; } }
-
-.calendar {
+.component, .calendar {
   border: 1px solid #ccc;
   padding: 10px;
   margin: 10px;
   margin: 30;
   padding: 30;
   font-family: sans-serif;
-  color: #333;
+  color: #333; }
+
+@media screen and (max-width: 420px) {
+  .component, .calendar {
+    font-size: 2rem; } }
+
+@media screen and (min-width: 600px) {
+  .component, .calendar {
+    width: 300px;
+    font-size: 1rem; } }
+
+@keyframes toDark {
+  0% {
+    background-color: white; }
+  100% {
+    background-color: gray; } }
+
+.calendar {
   display: grid;
   grid-template-areas: "year year year year year year year" "month month month month month month month"   "day day day day day day day"   "day day day day day day day" "day day day day day day day" "day day day day day day day" "day day day day day day day";
   grid-auto-columns: 1fr;
   text-align: center; }
-  @media screen and (max-width: 420px) {
-    .calendar {
-      font-size: 2rem; } }
-  @media screen and (min-width: 600px) {
-    .calendar {
-      width: 300px;
-      font-size: 1rem; } }
 
 .year {
   grid-area: year;
@@ -50,6 +54,6 @@
   flex-wrap: wrap; }
 
 .days .validDays:hover {
-  animation-name: example;
+  animation-name: toDark;
   animation-duration: 4s;
   animation-iteration-count: 1; }

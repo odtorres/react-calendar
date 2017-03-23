@@ -1,16 +1,7 @@
-@import "Animation.scss";
-
-$break-small: 420px;
-$break-large: 600px;
+@import "General.scss";
 
 .calendar {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px;
-  margin: 30;
-  padding: 30;
-  font-family: sans-serif;
-  color: #333;
+  @extend .component; 
 
   //min-height: 100vh;
   display: grid;
@@ -23,18 +14,7 @@ $break-large: 600px;
     "day day day day day day day"
     "day day day day day day day";
   grid-auto-columns: 1fr;
-  text-align: center;
-
-  @media screen and (max-width: $break-small) {
-    //width: 100px;
-    //float: none;    
-    font-size: 2rem;
-  }
-  @media screen and (min-width: $break-large) {
-    width: 300px;
-    font-size: 1rem;
-    //float: right;    
-  }
+  text-align: center; 
 }
 
 .year{
@@ -69,7 +49,7 @@ $break-large: 600px;
 }
 
 .days .validDays:hover{
-  animation-name: example;
+  animation-name: toDark;
   animation-duration: 4s;
   animation-iteration-count:1;
   //animation-iteration-count: 3;
