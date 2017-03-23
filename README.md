@@ -19,7 +19,7 @@ Simple React Calendar Component.
 GitHub: [odtorres](https://github.com/odtorres)
 
 ## License
-  TUF-2000m-webclient by Oscar Daniel Torres Hdez <odtorres891118@gmail.com>
+  react-calendar by Oscar Daniel Torres Hdez <odtorres891118@gmail.com>
 
   Copyright (C) 2017 Oscar Daniel Torres Hdez.
 
