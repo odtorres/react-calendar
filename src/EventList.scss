@@ -1,0 +1,9 @@
+@import "General.scss";
+
+.eventList{
+    @extend .component;
+}
+
+li{
+    width: 100%;
+}
