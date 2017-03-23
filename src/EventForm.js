@@ -37,7 +37,8 @@ class EventForm extends Component {
   }
 
   handleName(e) {
-    this.setState({ name: e.target.value });
+    if(e.target.value.length<=15)
+      this.setState({ name: e.target.value });
   }
 
   handleDetails(e) {
